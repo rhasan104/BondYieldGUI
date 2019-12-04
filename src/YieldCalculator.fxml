@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="300.0" prefWidth="500.0" style="-fx-background-color: lightgrey;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="YieldCalculatorController">
+   <children>
+      <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <HBox prefHeight="36.0" prefWidth="400.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Coupon Rate" wrappingWidth="168.6171875">
+                     <font>
+                        <Font name="Monaco" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                  </Text>
+                  <JFXTextField fx:id="txtfldCouponRate" alignment="CENTER" focusColor="#43a840" prefHeight="4.0" prefWidth="232.0" promptText="Decimal" unFocusColor="BLACK">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Italic" size="13.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="36.0" prefWidth="400.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Years" wrappingWidth="168.6171875">
+                     <font>
+                        <Font name="Monaco" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                  </Text>
+                  <JFXTextField fx:id="txtfldYears" alignment="CENTER" focusColor="#43a840" prefHeight="27.0" prefWidth="232.0" promptText="Integer" unFocusColor="BLACK">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Italic" size="13.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="36.0" prefWidth="400.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Face Value" wrappingWidth="168.6171875">
+                     <font>
+                        <Font name="Monaco" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                  </Text>
+                  <JFXTextField fx:id="txtfldFV" alignment="CENTER" focusColor="#43a840" prefHeight="27.0" prefWidth="232.0" promptText="Decimal" unFocusColor="BLACK">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Italic" size="13.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="36.0" prefWidth="400.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Current Price" wrappingWidth="168.6171875">
+                     <font>
+                        <Font name="Monaco" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                  </Text>
+                  <JFXTextField fx:id="txtfldPrice" alignment="CENTER" focusColor="#43a840" prefHeight="27.0" prefWidth="232.0" promptText="Decimal" unFocusColor="BLACK">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Italic" size="13.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+            </HBox>
+            <JFXButton fx:id="btnCalcCY" onMouseClicked="#calcCP" prefHeight="15.0" prefWidth="400.0" ripplerFill="#7dbc7b" style="-fx-background-color: white;" text="Calculate Yield To Maturity">
+               <font>
+                  <Font name="Monaco" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </JFXButton>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
