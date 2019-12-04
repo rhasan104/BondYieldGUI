@@ -24,7 +24,7 @@ public class YieldCalculator extends Calculator {
 
     private double CalcYield(double coupon, int years, double face, double price) {
 
-        int MAX_ITERATION = 200;
+        int MAX_ITERATION = 500;
         double tolerance = 1e-7;
         
         /**
