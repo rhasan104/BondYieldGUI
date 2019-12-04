@@ -5,7 +5,7 @@ Instructions:
 
 To Run the GUI app from cmd prompt or terminal,
 
-     Navigate to the location you saved that folder using console.
+     Navigate to the location you saved that folder using console into the bin folder.
 	 
      use the following command to run:
 		    java -cp ".;jfoenix-8.0.8.jar" Main
